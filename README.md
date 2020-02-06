@@ -2,7 +2,7 @@
 
 To install :
 ``` sh
-$ npm i multiple-array-filterfilterAndOrdenadeArray
+$ npm i multiple-array-filter
 ```
 or
 ``` sh
