@@ -1,0 +1,21 @@
+{
+  "name": "multiple-array-filter",
+  "version": "1.0.2",
+  "description": "Create a simple array multiple array filter with Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "keywords": ["Array", "Filter"],
+  "author": "Rodrigo Jorge",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/xdigu/multiple-filter-array"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.149",
+    "lodash": "^4.17.15",
+    "typescript": "^3.7.5"
+  }
+}
