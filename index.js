@@ -30,7 +30,7 @@ function consolidateAllFilter(arrayToBeFiltered, arrayOfFilters) {
 }
 
 module.exports = {
-  filterAndOrdenateArray(items, filters, orderBy) {
+  filterAndSortArray(items, filters, orderBy) {
     const sortAsc = (firstSortItem, secondSortItem) => firstSortItem[orderBy] - secondSortItem[orderBy];
 
     return lodash

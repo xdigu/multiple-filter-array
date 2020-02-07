@@ -14,7 +14,7 @@ usage:
 ``` js
 'use strict'
 
-const { filterAndOrdenateArray } = require('multiple-array-filter');
+const { filterAndSortArray } = require('multiple-array-filter');
 
 const items = [
   { name: 'Steve Jobs', id: 1 },
@@ -29,7 +29,7 @@ const filters = [
   { field: 'name', search: 'job' }
 ]
 
-const filtered_array = filterAndOrdenateArray(items, filters, 'id');
+const filtered_array = filterAndSortArray(items, filters, 'id');
 
 console.log(filtered_array);
 
