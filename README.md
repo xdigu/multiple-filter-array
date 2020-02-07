@@ -24,9 +24,8 @@ const items = [
 ]
 
 const filters = [
-  { field: 'name', search: 'bil' },
+  { field: 'name', search: ['bil', 'job'] },
   { field: 'id', search: 3 },
-  { field: 'name', search: 'job' }
 ]
 
 const filtered_array = filterAndSortArray(items, filters, 'id');
