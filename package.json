@@ -1,6 +1,6 @@
 {
   "name": "multiple-array-filter",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Create a simple array multiple array filter with Nodejs",
   "main": "index.js",
   "scripts": {
