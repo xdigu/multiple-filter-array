@@ -12,7 +12,11 @@ function filterOneArray(arrayToBeFiltered, fieldToFilter, stringToFilter) {
     return itemKey
       .toString()
       .toUpperCase()
-      .indexOf(stringToFilter.toString().toUpperCase()) != -1
+      .includes(
+        stringToFilter
+          .toString()
+          .toUpperCase()
+      );
   });
 
   return arrayFiltered;
@@ -22,8 +26,14 @@ function consolidateAllFilter(arrayToBeFiltered, arrayOfFilters) {
   const consolidatedFilters = [];
 
   arrayOfFilters.map(filter => {
-    filterOneArray(arrayToBeFiltered, filter.field, filter.search)
-      .forEach(item => consolidatedFilters.push(item))
+    const search = [];
+
+    typeof filter.search !== "object" ? search.push(filter.search) : search.push(...filter.search);
+
+    search.forEach(stringToSearch => {
+      filterOneArray(arrayToBeFiltered, filter.field, stringToSearch)
+        .forEach(item => consolidatedFilters.push(item));
+    });
   });
 
   return consolidatedFilters;
