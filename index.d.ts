@@ -12,4 +12,4 @@ interface filter {
  * 
  * @returns Array filtered and orderned
  */
-export function filterAndOrdenateArray(items: Array<Object>, filters: Array<filter>, orderBy: String): Array<Object>
+export function filterAndSortArray(items: Array<Object>, filters: Array<filter>, orderBy: String): Array<Object>
